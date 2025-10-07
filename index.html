@@ -1,56 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MINGAFIX</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reto 1 – Supabase Connection & Data Handling</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="LOGO.png" alt="MINGAFIX Logo" class="logo">
-        <h1>MINGAFIX</h1>
-    </header>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand-row">
+        <img src="LOGO.png" alt="MINGAFIX logo" class="logo" />
+        <div>
+          <h1 class="brand">MINGAFIX</h1>
+          <p class="tag">Reto 1 – Supabase Connection & Data Handling</p>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="project-description">
-            <h2>Sobre el Proyecto</h2>
-            <p>Objetivo: Visualizar al menos 5 reportes en un mapa (OpenStreetMap, Leaflet o Google
-            Maps) con categorías diferenciadas.</p>
-            <a href="https://github.com/MiguelCarapaz/MingafixMap.git" target="_blank" class="button">Ver Repositorio en GitHub</a>
-        </section>
+  <main>
+    <section class="container">
+      <div class="video-wrap">
+        <video id="heroVideo" controls playsinline preload="metadata">
+          <source src="videoprincipal.mp4" type="video/mp4" />
+          Tu navegador no soporta video.
+        </video>
+      </div>
+      <div class="actions">
+          <a class="btn" href="https://github.com/MiguelCarapaz/mingafixbackend.git" target="_blank" rel="noopener">Repositorio en Github</a>
+          <a class="btn" href="https://mingafixbackend-production.up.railway.app/docs#/default/list_reports_reports_get" target="_blank" rel="noopener">Despliegue del backend</a>
+      </div>
+    </section>
 
-        <section class="video-section">
-            <h2>Demostración</h2>
-            <video controls>
-                <source src="mapa.mp4" type="video/mp4">
-                Tu navegador no soporta el tag de video.
-            </video>
-        </section>
+    <!-- CREADOR -->
+    <section id="creador" class="container card reveal">
+      <h2>Creado por</h2>
+      <div class="creator">
+        <div class="creator-info">
+          <h3>Miguel Carapaz</h3>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/miguel-carapaz" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://portfolio-tawny-zeta-45.vercel.app/#portfolio" target="_blank" rel="noopener">Portafolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <section class="creators-section">
-            <h2>Creadores</h2>
-            <div class="creators-container">
-                <div class="creator-card">
-                    <h3>Miguel Carapaz</h3>
-                    <div class="links">
-                        <a href="https://www.linkedin.com/in/miguel-carapaz" target="_blank">LinkedIn</a> |
-                        <a href="https://portfolio-tawny-zeta-45.vercel.app/#portfolio" target="_blank">Portafolio</a>
-                    </div>
-                </div>
-                <div class="creator-card">
-                    <h3>Mateo Congo</h3>
-                    <div class="links">
-                        <a href="https://www.linkedin.com/in/mateo-congo-b65a0a27b/" target="_blank">LinkedIn</a> |
-                        <a href="https://github.com/Einarr07" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 MINGAFIX</p>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p>&copy; <span id="year"></span> MINGAFIX</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
