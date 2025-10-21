@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Reto 3 – Gamificación Aplicada (Sistema de Puntos y Badges)</title>
+  <title>Evaluación Hackathon MINGAFIX</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -14,7 +14,7 @@
         <img src="LOGO.png" alt="MINGAFIX logo" class="logo" />
         <div>
           <h1 class="brand">MINGAFIX</h1>
-          <p class="tag">Reto 3 – Gamificación Aplicada (Sistema de Puntos y Badges)</p>
+          <p class="tag">Evaluación Hackathon MINGAFIX</p>
         </div>
       </div>
     </div>
@@ -22,16 +22,108 @@
 
   <main>
     <section class="container">
-      <div class="video-wrap">
-        <video id="heroVideo" controls playsinline preload="metadata">
-          <source src="videoprincipal.mp4" type="video/mp4" />
-          Tu navegador no soporta video.
-        </video>
-      </div>
-      <div class="demo-image-wrapper">
-        <img src="qr.jpg" alt="Código QR del demo" class="demo-image">
-        <p class="demo-caption">Demo</p>
-      </div>
+        <h2>Video Personal</h2>
+        <div class="video-wrap">
+            <video id="heroVideo" controls playsinline preload="metadata">
+                <source src="presentacion.mp4" type="video/mp4" />
+                Tu navegador no soporta video.
+            </video>
+        </div>
+        <div class="actions">
+            <a href="HV Miguel Carapaz.pdf" target="_blank" rel="noopener" class="btn">CV Actualizado</a>
+        </div>
+    </section>
+
+    <section id="ensayo" class="container card reveal">
+        <h2>Ensayo Personal</h2>
+        <p>Participar en la hackathon de MingaFix ha sido una experiencia enriquecedora que me permitió profundizar en el desarrollo de soluciones tecnológicas orientadas a la mejora de la gestión ciudadana. Durante el proceso, comprendí que MingaFix no es solo una aplicación para reportar incidencias; es una plataforma que busca cerrar el ciclo entre la comunidad y las entidades públicas, promoviendo la participación activa y la transparencia. Implementar desde prototipos visuales en Figma hasta arquitecturas técnicas con Firebase y AWS, desarrollar APIs robustas, mapas interactivos y sistemas inteligentes de clasificación, me permitió entender la complejidad y el impacto social que puede tener un proyecto de esta naturaleza.</p>
+        <p>Creo firmemente que MingaFix tiene el potencial de transformar la manera en que los ciudadanos interactúan con su entorno y las autoridades, facilitando una gestión más eficiente y colaborativa de problemas urbanos. La integración de tecnologías innovadoras como inteligencia artificial para la generación automática de reportes y gamificación para incentivar la participación, refuerzan su valor diferencial.</p>
+        <p>Quiero ser parte de esta startup porque me motiva contribuir a un proyecto que combina tecnología con impacto social real. Estoy dispuesto a invertir mi tiempo, energía y talento porque creo en el poder de la innovación cívica para generar cambios tangibles. Asumir este riesgo es una oportunidad para crecer profesionalmente y, sobre todo, para formar parte de una comunidad que construye soluciones significativas para mejorar la calidad de vida de las personas.</p>
+    </section>
+
+    <section id="retos" class="container">
+        <h2>Documento con los links de cada reto</h2>
+        <div class="actions">
+            <a href="Reporte_Avances_MINGAFIX.pdf" download="Reporte_Avances_MINGAFIX.pdf" class="btn">Descargar Reporte</a>
+        </div>
+        
+        <div class="card reveal">
+            <h3>Primer Reporte</h3>
+            <p>Se desarrolló un prototipo interactivo de la aplicación MingaFix utilizando la herramienta de diseño Figma, con el objetivo de representar de manera visual y estructurada el flujo de navegación y la experiencia del usuario (UX) dentro de la aplicación. Este prototipo permitió validar preliminarmente la disposición de las pantallas, la jerarquía de información y la lógica de interacción entre funcionalidades clave, sirviendo como base para futuras iteraciones de diseño y desarrollo.</p>
+            <a href="https://www.figma.com/make/TGwP6QdWNMCSgz7r3mIv4R/MINGAFIX?node-id=0-1&p=f&t=reuxwFz8kmpYJP64-0&fullscreen=1" target="_blank" rel="noopener" class="btn">Enlace Figma</a>
+        </div>
+
+        <div class="card reveal">
+            <h3>Reto 0 - Arquitectura</h3>
+            <p>Se elaboraron dos propuestas de arquitectura técnica en la plataforma colaborativa Miro, con el propósito de visualizar y comunicar claramente la infraestructura tecnológica contemplada para el desarrollo del proyecto. Cada arquitectura contempla el uso de diferentes servicios en la nube: una orientada al stack de Firebase (incluyendo autenticación, base de datos en tiempo real y hosting), y otra basada en servicios de AWS (como Cognito, API Gateway, Lambda y DynamoDB). Esta comparación permite evaluar las ventajas, desafíos y escalabilidad de cada enfoque antes de definir la implementación final.</p>
+            <a href="https://miro.com/app/board/uXjVJBT6LV0=/?share_link_id=61107528769" target="_blank" rel="noopener" class="btn">Enlace Miro</a>
+        </div>
+
+        <h3>Semana 1</h3>
+        <div class="card reveal">
+            <h4>Reto 1: Api ciudadana Básica</h4>
+            <p>Se desarrolló un endpoint específico para simular el reporte de incidencias dentro de la aplicación MingaFix, con el objetivo de establecer una base funcional y estructurada para la gestión de reportes. La implementación se realizó utilizando Python como lenguaje principal, junto al framework FastAPI para la construcción del servicio web, y Supabase como backend para la gestión de datos. Esta integración permitió establecer una arquitectura ágil, escalable y orientada a eventos, sentando las bases para un sistema robusto de reporte en futuras versiones de la aplicación.</p>
+            <a href="https://drive.google.com/file/d/1KxKME8ajn42ZjOy9NkpsF06ZkvyrXDex/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto 2: Mapa vivo inicial</h4>
+            <p>Se implementó un mapa interactivo utilizando la librería Leaflet, con el propósito de visualizar de manera dinámica cómo se representarían los reportes de incidencias geolocalizadas dentro de la aplicación MingaFix. La integración se realizó en un entorno móvil empleando Expo y React Native, consumiendo el endpoint previamente desarrollado para obtener los datos de los reportes desde el backend. Esta funcionalidad permitió simular el flujo completo de visualización geoespacial, brindando una perspectiva clara sobre cómo se desplegará la información en el mapa en futuras etapas del proyecto.</p>
+            <a href="https://drive.google.com/file/d/1BmjfNM0mHndkGjGvYXdWPKB52KSIP7x4/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto Creativo: creativo comunitario</h4>
+            <p>Se elaboró un video explicativo en formato breve, con un estilo similar a los shorts, con el objetivo de presentar y dar a conocer la aplicación MingaFix de forma clara y concisa. Para su producción se utilizaron diversas herramientas de edición de video, lo que permitió combinar elementos visuales, texto y animaciones que resumen las funcionalidades clave de la aplicación. Este recurso audiovisual está orientado a captar la atención de potenciales usuarios y facilitar la comprensión del propósito del proyecto en pocos segundos.</p>
+            <a href="https://drive.google.com/file/d/1zwDh7kuxjz1TtR_oDtWB5eHPj6WpvnpN/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+
+        <h3>Semana 2</h3>
+        <div class="card reveal">
+            <h4>Reto 1: Supabase Connection & Data Handling</h4>
+            <p>Se estableció la conexión con Supabase como backend principal, utilizando Python y el framework FastAPI para la construcción del servicio de intermediación. Esta integración permitió crear una tabla con una estructura básica orientada al almacenamiento de reportes de incidencias, facilitando tanto la inserción como la consulta de datos simulados desde la aplicación móvil o scripts externos. El objetivo principal fue sentar las bases de una capa de persistencia eficiente y accesible, que permita gestionar los reportes de manera estructurada durante las fases iniciales de desarrollo.</p>
+            <a href="https://drive.google.com/file/d/1x16szD7zP2R-kWDnrqdnTrXcgam-7bvI/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto 2: LiveMap API Integration</h4>
+            <p>Se diseñó e implementó un servicio API con el objetivo de visualizar, en un mapa interactivo, los reportes de incidencias almacenados en Supabase, ya sean datos simulados (mock) o reales. La visualización se desarrolló utilizando React Native, React JS, TypeScript y Expo, permitiendo una integración fluida entre el frontend y el backend. Este desarrollo buscó representar de manera visual los datos estructurados de los reportes, incluyendo detalles como imágenes y descripciones, ofreciendo así una experiencia más completa y realista de cómo se presentarán los reportes dentro de la aplicación final.</p>
+            <a href="https://drive.google.com/file/d/1Z5ZfS4AS_Ej3Q4DWgRp7KpMZB5HrTktw/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto 3: Live Updates Simulation (WebSocket / Polling)</h4>
+            <p>Se implementó una simulación de actualizaciones en tiempo real dentro del LiveMap, utilizando la técnica de polling para consultar periódicamente el backend en busca de nuevos reportes. Esta funcionalidad permitió mostrar cambios en el mapa sin necesidad de recargar la página o la aplicación, mejorando así la experiencia del usuario en escenarios donde la información geolocalizada debe mantenerse actualizada de forma continua. El objetivo fue validar el comportamiento dinámico del sistema y sentar las bases para, en el futuro, incorporar mecanismos más eficientes como WebSockets.</p>
+            <a href="https://drive.google.com/file/d/1yXYzYfQb2MkTIwCotf445MB1zAqiFBXK/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto Creativo: Visualización Inteligente de Datos Urbanos</h4>
+            <p>Se diseñó una propuesta de visualización innovadora en Figma para representar los reportes del mapa segmentados por categorías, zonas geográficas o frecuencia de ocurrencia. Esta propuesta se construyó sobre la demo previamente creada, permitiendo extender el flujo de usuario con nuevas formas de interacción y filtrado visual. El objetivo fue ilustrar cómo se podría implementar una capa de análisis más avanzada dentro del mapa, mejorando la comprensión y navegación de los reportes mediante una interfaz más intuitiva y funcional.</p>
+            <a href="https://drive.google.com/file/d/1KuR4yeuBZubWqIWXtqB2Z8bNL2DUZqXd/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+
+        <h3>Semana 3</h3>
+        <div class="card reveal">
+            <h4>Reto 1: Smart Report Submission Flow (UX + Data Flow)</h4>
+            <p>Se implementó un flujo completo e inteligente para el envío de reportes dentro de la aplicación, incorporando validaciones automáticas, retroalimentación contextual y sugerencias dinámicas. Entre las funcionalidades desarrolladas se incluyó la autodetección de categorías a partir del texto ingresado en la descripción del reporte, lo que permite clasificar automáticamente el incidente; además, se añadió la confirmación de ubicación con opción de ajuste manual, y un sistema de retroalimentación visual que informa al usuario sobre el estado del envío (cargando, éxito o error). Esta implementación tuvo como objetivo optimizar la experiencia del usuario al momento de generar un reporte, reduciendo errores, mejorando la precisión de los datos y agilizando el proceso general de registro de incidencias.</p>
+            <a href="https://drive.google.com/file/d/1KEJ-MJ0VuW3xVBZ4ajTc3CGew8azkKHL/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto 2: LiveMap Intelligence Layer</h4>
+            <p>Se incorporó una capa inteligente al LiveMap con el objetivo de mejorar la interpretación visual de los datos geoespaciales asociados a los reportes. Esta capa incluye funcionalidades como clustering de puntos para agrupar reportes cercanos, heatmaps dinámicos que reflejan la densidad de incidencias, gráficos e indicadores superpuestos en el mapa, así como la integración visual de estados (por ejemplo, reportes activos, solucionados o en revisión). Esta implementación busca facilitar el análisis visual de grandes volúmenes de información, permitiendo a los usuarios identificar patrones, zonas críticas y el estado general de las incidencias de manera intuitiva y eficiente.</p>
+            <a href="https://drive.google.com/file/d/1E5_yD5zHoWQRblQGb6gQNU8pX2Reh6SO/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto 3: Gamificación Aplicada (Sistema de Puntos y Badges)</h4>
+            <p>Se implementó un sistema funcional y prototipado de puntos, medallas y recompensas dentro de la aplicación, diseñado para incentivar la participación y el compromiso de los usuarios. Este sistema incluye la acumulación de puntos basados en acciones realizadas, la asignación dinámica de badges o medallas al alcanzar ciertos hitos (como número de reportes o categorías atendidas), un panel de logros o “perfil de jugador” donde los usuarios pueden visualizar sus progresos, y animaciones o microinteracciones que refuerzan la experiencia positiva al obtener recompensas. La finalidad principal fue aumentar la motivación y la retención de usuarios mediante técnicas de gamificación, promoviendo un uso más activo y continuo de la plataforma.</p>
+            <a href="https://drive.google.com/file/d/13QvjBQGCBinvnUIYlvw_7Tkkedp9oKRa/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto Creativo: “Future of Fixing”</h4>
+            <p>Se desarrolló una funcionalidad innovadora para integrar al MVP y roadmap de MingaFix: un rastreador comunitario que cierra el ciclo entre el reporte de un problema ciudadano y su resolución. Este sistema permite que los reportes sean asignados a entidades públicas o asumidos por usuarios individuales, quienes pueden dar seguimiento al avance hasta la solución efectiva del problema. Además, incorpora un mecanismo de incentivos mediante la acumulación de logros y puntos, desbloqueando insignias dentro de la aplicación. El propósito de esta implementación fue fomentar la responsabilidad compartida, mejorar la transparencia y promover la participación activa de la comunidad en la gestión y resolución de incidencias.</p>
+            <a href="https://drive.google.com/file/d/1P6UPXy5W3bUY3pipG7Q31nP8-JFaQeWs/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
+        <div class="card reveal">
+            <h4>Reto bonus AI Helper</h4>
+            <p>Se desarrolló un “AI Helper” o agente conversacional ciudadano capaz de interpretar mensajes de texto o imágenes y transformarlos en reportes preformateados para su posterior procesamiento dentro de la aplicación. La implementación se realizó en Python, utilizando técnicas de procesamiento de lenguaje natural y visión por computadora, apoyándose en el uso de un prompt para interactuar con el modelo de lenguaje Google Gemini AI. Esta herramienta automatiza la generación de reportes estructurados, facilitando la entrada de datos por parte de los usuarios y mejorando la eficiencia en la captura de incidencias.</p>
+            <a href="https://drive.google.com/file/d/1P6UPXy5W3bUY3pipG7Q31nP8-JFaQeWs/view?usp=drive_link" target="_blank" rel="noopener" class="btn">Ver Video</a>
+        </div>
     </section>
 
     <!-- CREADOR -->
@@ -58,7 +150,6 @@
   </footer>
 
   <script>
-    // footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>

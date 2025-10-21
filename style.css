@@ -55,5 +55,30 @@ html,body{height:100%;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Rob
   margin-top: 8px;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--primary);
+}#ensayo p {
+    margin-bottom: 1em;
 }
+
+#retos .card {
+    margin-bottom: 20px;
+}
+
+#retos .card p {
+    margin-bottom: 1em;
+}
+
+
+#retos h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+#retos h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+
